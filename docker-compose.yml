@@ -31,6 +31,7 @@ services:
             - db
             - redis
             - elasticsearch
+            - supervisor
         networks:
             - laravel
 
@@ -84,6 +85,16 @@ services:
             dockerfile: Dockerfile
         volumes:
             - ./docker/supervisor:/etc/supervisor/conf.d
+        networks:
+            - laravel
+    laravel-echo-server:
+        build:
+            context: ./docker
+            dockerfile: Dockerfile.echo
+        ports:
+            - '6001:6001'
+        networks:
+            - laravel
 
 networks:
     laravel:
@@ -93,3 +104,4 @@ volumes:
     postgres-data:
     redis-data:
     esdata:
+    supervisor:

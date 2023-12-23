@@ -28,6 +28,7 @@ RUN apt-get update \
         xml \
         zip \
         gd \
+        pcntl \
     && pecl install redis \
     && docker-php-ext-enable redis
 
@@ -38,6 +39,9 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 COPY . /var/www/html
 RUN mkdir /var/log/redis
 RUN mkdir /var/log/nginx
+RUN mkdir /var/log/php
+RUN mkdir -p /var/log/horizon
+
 # Instala as dependências do Node.js (opcional, se estiver usando recursos de frontend)
 RUN apt-get install -y nodejs npm
 

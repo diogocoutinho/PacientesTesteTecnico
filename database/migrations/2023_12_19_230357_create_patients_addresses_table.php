@@ -18,6 +18,9 @@ return new class extends Migration {
             $table->string('state');
             $table->softDeletes();
             $table->timestamps();
+
+            $table->index(['patient_id', 'postal_code', 'street', 'number', 'neighborhood', 'city', 'state']);
+            $table->foreign('patient_id')->references('id')->on('patients');
         });
     }
 

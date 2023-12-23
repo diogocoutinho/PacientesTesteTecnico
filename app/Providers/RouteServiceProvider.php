@@ -36,5 +36,9 @@ class RouteServiceProvider extends ServiceProvider
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
         });
+
+        Route::model('patients', \App\Models\Patients::class);
+        Route::model('patients_address', \App\Models\PatientsAddress::class);
+        Route::model('list', \App\Models\Patients::class);
     }
 }

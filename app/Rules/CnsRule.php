@@ -9,24 +9,64 @@ class CnsRule implements ValidationRule
 {
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
-        $cns = trim($attribute);
-        if (strlen($cns) !== 15) {
-            $fail('O CNS deve ter 15 dígitos');
+        if (strlen($value) != 15) {
+            $fail("O atributo $attribute deve ter exatamente 15 caracteres.");
+            return;
         }
 
-        $pis = substr($cns, 0, 11);
-        $soma = array_sum(array_map(function ($x, $y) {
-            return $x * $y;
-        }, str_split($pis), range(15, 5)));
+        $firstChar = substr($value, 0, 1);
 
-        $dv = 11 - ($soma % 11);
-        if ($dv === 11 || $dv === 10) {
+        if ($firstChar == 1 || $firstChar == 2) {
+            if (!$this->validateTemporaryCns($value)) {
+                $fail("O CNS fornecido para $attribute é inválido.");
+            }
+        } elseif ($firstChar == 7 || $firstChar == 8 || $firstChar == 9) {
+            if (!$this->validatePermanentCns($value)) {
+                $fail("O CNS fornecido para $attribute é inválido.");
+            }
+        } else {
+            $fail("O CNS fornecido para $attribute é inválido.");
+        }
+    }
+
+    private function validateTemporaryCns($value): bool
+    {
+        $pis = substr($value, 0, 11);
+        $sum = $this->calculateSum($pis);
+
+        $rest = $sum % 11;
+        $dv = 11 - $rest;
+
+        if ($dv == 11) {
             $dv = 0;
         }
 
-        $resultant = $pis . str_pad((string)$dv, 3, '0', STR_PAD_LEFT);
-        if ($resultant !== $cns) {
-            $fail('O CNS é inválido');
+        if ($dv == 10) {
+            $sum += 2;
+            $rest = $sum % 11;
+            $dv = 11 - $rest;
+            $result = $pis . "001" . strval($dv);
+        } else {
+            $result = $pis . "000" . strval($dv);
         }
+        return $value == $result;
+    }
+
+    private function validatePermanentCns($value): bool
+    {
+        $sum = $this->calculateSum($value);
+
+        return $sum % 11 == 0;
+    }
+
+    private function calculateSum($value): float|int
+    {
+        $sum = 0;
+
+        for ($i = 0; $i < strlen($value); $i++) {
+            $sum += intval($value[$i]) * (15 - $i);
+        }
+
+        return $sum;
     }
 }

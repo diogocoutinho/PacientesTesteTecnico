@@ -1,0 +1,220 @@
+Horizon started successfully.
+Horizon started successfully.
+  2023-12-23 03:23:46 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:23:46 App\Jobs\ImportPatientsJob ................ 11.91ms FAIL
+  2023-12-23 03:24:58 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:24:58 App\Jobs\ImportPatientsJob ................. 3.66ms FAIL
+  2023-12-23 03:25:13 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:25:13 App\Jobs\ImportPatientsJob ................ 15.96ms FAIL
+  2023-12-23 03:25:37 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:25:37 App\Jobs\ImportPatientsJob ................ 17.03ms FAIL
+  2023-12-23 03:33:40 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:33:40 App\Jobs\ImportPatientsJob ................. 3.34ms FAIL
+  2023-12-23 03:35:28 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:35:28 App\Jobs\ImportPatientsJob ................. 1.27ms FAIL
+  2023-12-23 03:37:25 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:37:25 App\Jobs\ImportPatientsJob ................. 1.23ms FAIL
+  2023-12-23 03:39:34 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:39:34 App\Jobs\ImportPatientsJob ................. 1.20ms FAIL
+  2023-12-23 03:41:07 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:41:07 App\Jobs\ImportPatientsJob ................. 5.07ms FAIL
+  2023-12-23 03:41:58 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:41:58 App\Jobs\ImportPatientsJob ................. 1.88ms FAIL
+  2023-12-23 03:44:28 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:44:28 App\Jobs\ImportPatientsJob ................. 1.22ms FAIL
+Horizon started successfully.
+  2023-12-23 03:46:08 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:46:08 App\Jobs\ImportPatientsJob ................ 16.43ms DONE
+  2023-12-23 03:46:53 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:46:53 App\Jobs\ImportPatientsJob ................. 8.68ms DONE
+  2023-12-23 03:49:29 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:49:29 App\Jobs\ImportPatientsJob ................. 1.26ms DONE
+  2023-12-23 03:57:00 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:57:00 App\Jobs\ImportPatientsJob ................ 57.58ms FAIL
+  2023-12-23 03:57:54 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 03:57:54 App\Jobs\ImportPatientsJob ................. 3.63ms FAIL
+  2023-12-23 04:00:57 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:00:57 App\Jobs\ImportPatientsJob ................. 6.36ms FAIL
+  2023-12-23 04:01:45 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:01:45 App\Jobs\ImportPatientsJob ................. 3.85ms FAIL
+  2023-12-23 04:04:42 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:04:42 App\Jobs\ImportPatientsJob ................ 22.42ms FAIL
+  2023-12-23 04:05:09 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:05:09 App\Jobs\ImportPatientsJob ................. 3.73ms FAIL
+  2023-12-23 04:06:42 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:06:42 App\Jobs\ImportPatientsJob ................ 24.98ms FAIL
+Horizon started successfully.
+  2023-12-23 04:08:34 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:08:34 App\Jobs\ImportPatientsJob ................ 20.50ms FAIL
+  2023-12-23 04:09:19 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:09:19 App\Jobs\ImportPatientsJob ................ 34.54ms DONE
+  2023-12-23 04:10:55 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:10:55 App\Jobs\ImportPatientsJob ................ 24.54ms DONE
+  2023-12-23 04:11:52 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:11:52 App\Jobs\ImportPatientsJob ................ 15.90ms DONE
+  2023-12-23 04:12:19 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:12:19 App\Jobs\ImportPatientsJob ................. 2.87ms DONE
+  2023-12-23 04:12:43 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:12:43 App\Jobs\ImportPatientsJob ................ 25.78ms DONE
+  2023-12-23 04:13:28 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:13:28 App\Jobs\ImportPatientsJob ................ 42.63ms DONE
+  2023-12-23 04:14:01 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:14:01 App\Jobs\ImportPatientsJob ................ 18.85ms DONE
+  2023-12-23 04:15:07 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:15:07 App\Jobs\ImportPatientsJob ................. 2.31ms DONE
+  2023-12-23 04:15:40 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:15:40 App\Jobs\ImportPatientsJob ................ 11.10ms FAIL
+  2023-12-23 04:16:13 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:16:13 App\Jobs\ImportPatientsJob ................. 1.24ms FAIL
+  2023-12-23 04:16:31 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:16:31 App\Jobs\ImportPatientsJob ................ 24.74ms DONE
+  2023-12-23 04:23:19 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:23:19 App\Jobs\ImportPatientsJob ................ 14.17ms DONE
+  2023-12-23 04:23:49 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:23:49 App\Jobs\ImportPatientsJob ................. 2.76ms DONE
+  2023-12-23 04:24:07 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:24:07 App\Jobs\ImportPatientsJob ................. 2.00ms DONE
+  2023-12-23 04:24:58 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:24:58 App\Jobs\ImportPatientsJob ................. 2.41ms DONE
+  2023-12-23 04:26:19 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:26:19 App\Jobs\ImportPatientsJob ................ 16.12ms DONE
+  2023-12-23 04:27:34 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:27:34 App\Jobs\ImportPatientsJob ................. 9.43ms DONE
+  2023-12-23 04:28:37 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:28:37 App\Jobs\ImportPatientsJob ................. 5.02ms DONE
+  2023-12-23 04:29:16 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:29:16 App\Jobs\ImportPatientsJob ................. 5.03ms DONE
+  2023-12-23 04:30:07 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:30:07 App\Jobs\ImportPatientsJob ................ 13.72ms DONE
+  2023-12-23 04:31:38 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:31:38 App\Jobs\ImportPatientsJob ................ 85.80ms FAIL
+  2023-12-23 04:32:44 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:32:44 App\Jobs\ImportPatientsJob ................. 3.23ms FAIL
+  2023-12-23 04:33:08 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:33:08 App\Jobs\ImportPatientsJob ................ 45.95ms FAIL
+  2023-12-23 04:33:23 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:33:23 App\Jobs\ImportPatientsJob ................ 43.17ms FAIL
+  2023-12-23 04:36:17 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:36:17 App\Jobs\ImportPatientsJob ................ 13.19ms FAIL
+  2023-12-23 04:37:06 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:37:06 App\Jobs\ImportPatientsJob ............... 141.38ms FAIL
+  2023-12-23 04:37:21 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:37:21 App\Jobs\ImportPatientsJob ................ 63.03ms FAIL
+  2023-12-23 04:38:03 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:38:03 App\Jobs\ImportPatientsJob ................ 20.34ms FAIL
+  2023-12-23 04:43:00 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:43:00 App\Jobs\ImportPatientsJob ................ 31.81ms FAIL
+
+   RedisException 
+
+  Connection refused
+
+  at vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php:161
+    157▕         if (version_compare(phpversion('redis'), '5.3.0', '>=') && ! is_null($context = Arr::get($config, 'context'))) {
+    158▕             $parameters[] = $context;
+    159▕         }
+    160▕ 
+  ➜ 161▕         $client->{$persistent ? 'pconnect' : 'connect'}(...$parameters);
+    162▕     }
+    163▕ 
+    164▕     /**
+    165▕      * Create a new redis cluster instance.
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+Horizon started successfully.
+  2023-12-23 04:43:44 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:43:44 App\Jobs\ImportPatientsJob ................ 71.27ms FAIL
+  2023-12-23 04:50:14 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:50:14 App\Jobs\ImportPatientsJob ................ 30.20ms DONE
+  2023-12-23 04:51:18 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:51:18 App\Jobs\ImportPatientsJob ................ 90.26ms DONE
+  2023-12-23 04:52:48 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 04:52:48 App\Jobs\ImportPatientsJob ................ 86.57ms DONE
+  2023-12-23 05:08:58 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 05:08:58 App\Jobs\ImportPatientsJob ............... 132.04ms FAIL
+  2023-12-23 05:14:20 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 05:14:20 App\Jobs\ImportPatientsJob ................ 37.77ms FAIL
+  2023-12-23 05:17:10 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 05:17:11 App\Jobs\ImportPatientsJob ............... 507.14ms DONE
+  2023-12-23 05:17:11 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 05:17:11 App\Events\JobCompleted .................... 8.73ms DONE
+  2023-12-23 05:17:11 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 05:17:11 App\Events\JobCompleted .................... 1.31ms DONE
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+
+   RedisException 
+
+  Connection refused
+
+  at vendor/laravel/framework/src/Illuminate/Redis/Connectors/PhpRedisConnector.php:161
+    157▕         if (version_compare(phpversion('redis'), '5.3.0', '>=') && ! is_null($context = Arr::get($config, 'context'))) {
+    158▕             $parameters[] = $context;
+    159▕         }
+    160▕ 
+  ➜ 161▕         $client->{$persistent ? 'pconnect' : 'connect'}(...$parameters);
+    162▕     }
+    163▕ 
+    164▕     /**
+    165▕      * Create a new redis cluster instance.
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:35
+      Illuminate\Foundation\Console\Kernel::handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+Horizon started successfully.
+  2023-12-23 06:09:32 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:09:32 App\Jobs\ImportPatientsJob ................ 57.19ms FAIL
+  2023-12-23 06:14:47 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:14:47 App\Jobs\ImportPatientsJob ................ 36.17ms DONE
+  2023-12-23 06:14:47 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:14:47 App\Events\JobCompleted .................... 2.43ms DONE
+  2023-12-23 06:14:47 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:14:47 App\Events\JobCompleted .................... 0.99ms DONE
+  2023-12-23 06:15:26 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:15:26 App\Jobs\ImportPatientsJob ................ 54.65ms DONE
+  2023-12-23 06:15:26 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:15:26 App\Events\JobCompleted .................... 2.10ms DONE
+  2023-12-23 06:15:26 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:15:26 App\Events\JobCompleted .................... 1.23ms DONE
+  2023-12-23 06:17:59 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:17:59 App\Events\JobCompleted .................... 1.08ms DONE
+  2023-12-23 06:18:50 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:18:51 App\Events\JobCompleted .................... 6.30ms DONE
+  2023-12-23 06:25:30 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:25:30 App\Events\JobCompleted .................... 5.00ms DONE
+  2023-12-23 06:33:18 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:33:18 App\Events\JobCompleted .................... 0.98ms DONE
+  2023-12-23 06:34:28 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:34:28 App\Events\JobCompleted .................... 4.69ms DONE
+  2023-12-23 06:34:46 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:34:46 App\Events\JobCompleted .................... 1.13ms DONE
+  2023-12-23 06:35:19 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:35:19 App\Events\JobCompleted .................... 0.99ms DONE
+  2023-12-23 06:36:19 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:36:19 App\Events\JobCompleted .................... 6.34ms DONE
+  2023-12-23 06:36:28 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:36:28 App\Events\JobCompleted .................... 6.08ms DONE
+  2023-12-23 06:36:58 App\Events\JobCompleted ........................ RUNNING
+  2023-12-23 06:36:58 App\Events\JobCompleted .................... 5.12ms DONE
+  2023-12-23 06:38:16 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:38:16 App\Jobs\ImportPatientsJob ................ 50.69ms FAIL
+  2023-12-23 06:39:25 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:39:25 App\Jobs\ImportPatientsJob ................ 41.44ms FAIL
+  2023-12-23 06:40:16 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:40:16 App\Jobs\ImportPatientsJob ................ 55.92ms DONE
+  2023-12-23 06:41:34 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:41:34 App\Jobs\ImportPatientsJob ................. 3.43ms FAIL
+  2023-12-23 06:42:40 App\Jobs\ImportPatientsJob ..................... RUNNING
+  2023-12-23 06:42:40 App\Jobs\ImportPatientsJob ................. 8.82ms DONE

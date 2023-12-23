@@ -15,8 +15,16 @@ class PatientsRequest extends FormRequest
             'last_name' => ['required'],
             'mother_name' => ['required'],
             'birthday' => ['required', 'date'],
-            'cpf' => ['required', 'numeric', 'unique:patients', 'size:11', 'regex:/[0-9]{11}/'],
-            'cns' => ['required', 'numeric', 'unique:patients', new CnsRule(), new CnsProvRule()],
+            'cpf' => ['required', 'numeric', 'unique:patients', 'digits:11', 'regex:/[0-9]{11}/'],
+            'cns' => ['required', 'numeric', 'unique:patients', new CnsRule()],
+            'postal_code' => ['required', 'numeric', 'digits:8'],
+            'street' => ['required'],
+            'number' => ['required', 'numeric'],
+            'complement' => ['nullable'],
+            'neighborhood' => ['required'],
+            'city' => ['required'],
+            'state' => ['required'],
+            'photo' => ['string', 'nullable', 'url'],
         ];
     }
 

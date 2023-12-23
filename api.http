@@ -1,0 +1,89 @@
+# curl --request POST
+#  --url http://localhost/login
+#  --header 'Accept: text/html, application/xhtml+xml'
+#  --header 'Accept-Encoding: gzip, deflate, br'
+#  --header 'Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3'
+#  --header 'Connection: keep-alive'
+#  --header 'Content-Type: application/json'
+#  --header 'Cookie: _pk_id.1.1fff=982afbca734d4a22.1700766081.; XSRF-TOKEN=eyJpdiI6InR4aTM0VkIzdDR5d0ptZEdNOUZDTHc9PSIsInZhbHVlIjoic25zVWJpR3RHK1hrYlRZSGhEdXo5cjR5MXc3c2srZXZjbWxvb1ZwWVNTeUpQT2NXYzZVSmp4alpGVHhycW9aRSsrejJuQ2h0bFc1VUZXeGRVbUkwb0pTZnhTZUw3aVNwaXROY1VucDBTd1UrRHpPc2hvY1hmWUF5S1Mrb2VJSkwiLCJtYWMiOiIzYTliZjhhYjMzZTY3MzdmYzE3N2QyYjJmNjUwZGZiNGNlYzJjYmMyYmU5MTQxZjIwOGZlY2IwNzljYjY0YmZlIiwidGFnIjoiIn0%3D; pacientes_session=eyJpdiI6IkxubHNzT2VrSXpEQk0xUnNMVVJwN0E9PSIsInZhbHVlIjoicWZEdFI5eTdlQWZ3NHlnblhIRCtZL3ljZ3ZqdGU2ejZ6eGYwaFRoR1V4akVHbmpBSjVHMGc4TTFEMmRSNW5vWTFFMUdKT21jV2FOVS9mR1kyRFV1WmtKMEZnU205M2pKa3dwUlhBTHVFUy8xOFA4QnRtbW83ZGNLWmZBSVhtN0YiLCJtYWMiOiI3YjQ4MWNkYjZjNjc2MzU4MGMyZGExZTc4MWI5MTk2OGJmZGViNTE5NzgyNThkNmNkMzUxNDZhYWY3YzRhZWFiIiwidGFnIjoiIn0%3D'
+#  --header 'Origin: http://localhost'
+#  --header 'Referer: http://localhost/login'
+#  --header 'Sec-Fetch-Dest: empty'
+#  --header 'Sec-Fetch-Mode: cors'
+#  --header 'Sec-Fetch-Site: same-origin'
+#  --header 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0'
+#  --header 'X-Inertia: true'
+#  --header 'X-Requested-With: XMLHttpRequest'
+#  --header 'X-XSRF-TOKEN: eyJpdiI6InR4aTM0VkIzdDR5d0ptZEdNOUZDTHc9PSIsInZhbHVlIjoic25zVWJpR3RHK1hrYlRZSGhEdXo5cjR5MXc3c2srZXZjbWxvb1ZwWVNTeUpQT2NXYzZVSmp4alpGVHhycW9aRSsrejJuQ2h0bFc1VUZXeGRVbUkwb0pTZnhTZUw3aVNwaXROY1VucDBTd1UrRHpPc2hvY1hmWUF5S1Mrb2VJSkwiLCJtYWMiOiIzYTliZjhhYjMzZTY3MzdmYzE3N2QyYjJmNjUwZGZiNGNlYzJjYmMyYmU5MTQxZjIwOGZlY2IwNzljYjY0YmZlIiwidGFnIjoiIn0='
+#  --data '{"email":"admin@admin.com","password":"123456789","remember":""}'
+POST http://localhost/login
+Accept: text/html, application/xhtml+xml
+Accept-Encoding: gzip, deflate, br
+Accept-Language: pt-BR,pt;q=0.8,en-US;q=0.5,en;q=0.3
+Connection: keep-alive
+Cookie: _pk_id.1.1fff=982afbca734d4a22.1700766081.; XSRF-TOKEN=eyJpdiI6InR4aTM0VkIzdDR5d0ptZEdNOUZDTHc9PSIsInZhbHVlIjoic25zVWJpR3RHK1hrYlRZSGhEdXo5cjR5MXc3c2srZXZjbWxvb1ZwWVNTeUpQT2NXYzZVSmp4alpGVHhycW9aRSsrejJuQ2h0bFc1VUZXeGRVbUkwb0pTZnhTZUw3aVNwaXROY1VucDBTd1UrRHpPc2hvY1hmWUF5S1Mrb2VJSkwiLCJtYWMiOiIzYTliZjhhYjMzZTY3MzdmYzE3N2QyYjJmNjUwZGZiNGNlYzJjYmMyYmU5MTQxZjIwOGZlY2IwNzljYjY0YmZlIiwidGFnIjoiIn0%3D; pacientes_session=eyJpdiI6IkxubHNzT2VrSXpEQk0xUnNMVVJwN0E9PSIsInZhbHVlIjoicWZEdFI5eTdlQWZ3NHlnblhIRCtZL3ljZ3ZqdGU2ejZ6eGYwaFRoR1V4akVHbmpBSjVHMGc4TTFEMmRSNW5vWTFFMUdKT21jV2FOVS9mR1kyRFV1WmtKMEZnU205M2pKa3dwUlhBTHVFUy8xOFA4QnRtbW83ZGNLWmZBSVhtN0YiLCJtYWMiOiI3YjQ4MWNkYjZjNjc2MzU4MGMyZGExZTc4MWI5MTk2OGJmZGViNTE5NzgyNThkNmNkMzUxNDZhYWY3YzRhZWFiIiwidGFnIjoiIn0%3D
+Origin: http://localhost
+Referer: http://localhost/login
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0
+X-Inertia: true
+X-Requested-With: XMLHttpRequest
+X-XSRF-TOKEN: eyJpdiI6InR4aTM0VkIzdDR5d0ptZEdNOUZDTHc9PSIsInZhbHVlIjoic25zVWJpR3RHK1hrYlRZSGhEdXo5cjR5MXc3c2srZXZjbWxvb1ZwWVNTeUpQT2NXYzZVSmp4alpGVHhycW9aRSsrejJuQ2h0bFc1VUZXeGRVbUkwb0pTZnhTZUw3aVNwaXROY1VucDBTd1UrRHpPc2hvY1hmWUF5S1Mrb2VJSkwiLCJtYWMiOiIzYTliZjhhYjMzZTY3MzdmYzE3N2QyYjJmNjUwZGZiNGNlYzJjYmMyYmU5MTQxZjIwOGZlY2IwNzljYjY0YmZlIiwidGFnIjoiIn0=
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password": "123456789",
+    "remember": ""
+}
+
+###
+
+
+
+###
+
+# curl --request POST
+#  --url http://localhost/patients/
+#  --header 'Content-Type: multipart/form-data'
+#  --header 'User-Agent: insomnia/8.5.0'
+#  --form first_name=Diogo
+#  --form last_name=Coutinho
+#  --form 'mother_name=Solange de Castro'
+#  --form birthday=20/04/1988
+#  --form cpf=07780223663
+#  --form cns=784466223664556
+GET http://localhost/patients/list
+User-Agent: insomnia/8.5.0
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="first_name"
+
+Diogo
+--WebAppBoundary
+Content-Disposition: form-data; name="last_name"
+
+Coutinho
+--WebAppBoundary
+Content-Disposition: form-data; name="mother_name"
+
+Solange de Castro
+--WebAppBoundary
+Content-Disposition: form-data; name="birthday"
+
+20/04/1988
+--WebAppBoundary
+Content-Disposition: form-data; name="cpf"
+
+07780223663
+--WebAppBoundary
+Content-Disposition: form-data; name="cns"
+
+784466223664556
+--WebAppBoundary--
+
+###
+

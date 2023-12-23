@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PatientsAddressController;
+use App\Http\Controllers\PatientsController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -33,3 +35,17 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::resource('patients', PatientsController::class);
+    Route::get('/patients/all', [PatientsController::class, 'getPatients'])->name('patients.getPatients');
+    Route::get('/patients/search/{cep}', [PatientsAddressController::class, 'searchCep'])->name('patients.search-cep');
+    Route::post('/patients/uploadPatientImage', [PatientsController::class, 'uploadPatientImage'])->name('patients.uploadPatientImage');
+    Route::post('/patients/export/{type}', [PatientsController::class, 'export'])->name('patients.export');
+    Route::post('patients/import', [PatientsController::class, 'import'])->name('patients.import');
+});
+

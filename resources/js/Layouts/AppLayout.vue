@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import {onMounted, onUnmounted, ref} from 'vue';
 import { Head, Link, router } from '@inertiajs/vue3';
 import ApplicationMark from '@/Components/ApplicationMark.vue';
 import Banner from '@/Components/Banner.vue';
@@ -7,6 +7,7 @@ import Dropdown from '@/Components/Dropdown.vue';
 import DropdownLink from '@/Components/DropdownLink.vue';
 import NavLink from '@/Components/NavLink.vue';
 import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
+import ActionMessage from "@/Components/ActionMessage.vue";
 
 defineProps({
     title: String,
@@ -22,6 +23,11 @@ const switchToTeam = (team) => {
     });
 };
 
+window.Echo.channel('job-completed')
+    .listen('JobCompleted', (e) => {
+        console.log(e.message)
+    });
+
 const logout = () => {
     router.post(route('logout'));
 };
@@ -32,6 +38,12 @@ const logout = () => {
         <Head :title="title" />
 
         <Banner />
+
+        <ActionMessage :on="$page.props.jetstream.flash.success" class="mb-4">
+            <template #default>
+                {{ $page.props.jetstream.flash.success }}
+            </template>
+        </ActionMessage>
 
         <div class="min-h-screen bg-gray-100">
             <nav class="bg-white border-b border-gray-100">
@@ -50,6 +62,9 @@ const logout = () => {
                             <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
+                                </NavLink>
+                                <NavLink :href="route('patients.index')" :active="route().current('patients.index')">
+                                    Pacientes
                                 </NavLink>
                             </div>
                         </div>
@@ -193,6 +208,9 @@ const logout = () => {
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('patients.index')" :active="route().current('patients.index')">
+                            Pacientes
                         </ResponsiveNavLink>
                     </div>
 
