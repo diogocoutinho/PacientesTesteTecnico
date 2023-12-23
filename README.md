@@ -6,6 +6,7 @@ Este projeto é uma aplicação Laravel que fornece uma interface para gerenciar
 
 - Docker
 - Docker Compose
+- Node.js V18.19.0
 
 ## Instalação com Docker
 
@@ -62,7 +63,11 @@ DB_PASSWORD=123456
 docker-compose exec app php artisan migrate
 ```
 
-9. Acesse a aplicação em `http://localhost`.
+9. Rode node para compilar os assets e acesse a aplicação em http://localhost
+
+```bash
+docker-compose exec app npm install && npm run dev
+```
 
 ## Testes
 
