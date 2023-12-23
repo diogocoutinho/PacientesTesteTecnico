@@ -12,13 +12,13 @@ Este projeto é uma aplicação Laravel que fornece uma interface para gerenciar
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/diogocoutinho/PacientesTesteTecnico.git
 ```
 
 2. Entre no diretório do projeto:
 
 ```bash
-cd seu-repositorio
+cd PacientesTesteTecnico
 ```
 
 3. Construa e inicie os containers do Docker:
