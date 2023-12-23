@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\JobCompleted;
 use App\Http\Requests\PatientsRequest;
 use App\Http\Requests\PatientsUpdateRequest;
 use App\Http\Resources\PatientsResource;
@@ -10,15 +9,16 @@ use App\Http\Services\PatientsService;
 use App\Jobs\ImportPatientsJob;
 use App\Models\Patients;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Redis;
+use Illuminate\Support\Facades\Cache;
 use Inertia\Inertia;
 
 class PatientsController extends Controller
 {
     public function index()
     {
+        $patients = PatientsService::getPatients();
         return Inertia::render('Patients/Index', [
-            'patients' => PatientsService::getPatients()
+            'patients' => $patients
         ]);
     }
 
@@ -50,11 +50,11 @@ class PatientsController extends Controller
         }
     }
 
-    public function destroy(Patients $patients)
+    public function destroy($id)
     {
+        $patients = Patients::find($id);
         $patients->delete();
-
-        return response()->json();
+        return to_route('patients.index');
     }
 
     public function edit($id)

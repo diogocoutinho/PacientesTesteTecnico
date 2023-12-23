@@ -165,7 +165,18 @@ const editPatient = (row) => {
 };
 
 const deletePatient = (row) => {
-    console.log(row);
+    form.delete(route('patients.destroy', { patients: row.id, patient: row.id }), {
+        preserveScroll: true,
+        onSuccess: () => {
+            rows.value = rows.value.filter((item) => item.id !== row.id);
+            message.value = 'Paciente excluído com sucesso!';
+            statusActionMessage.value = true;
+        },
+        onError: () => console.log('error'),
+        onFinish: () => {
+            loading.value = false;
+        },
+    });
 };
 
 const submitPatient = () => {

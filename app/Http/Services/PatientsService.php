@@ -2,7 +2,6 @@
 
 namespace App\Http\Services;
 
-use App\Exports\PatientExport;
 use App\Exports\PatientsExport;
 use App\Models\Patients;
 use App\Models\PatientsAddress;
@@ -16,15 +15,7 @@ class PatientsService
 {
     public static function getPatients(): ?Collection
     {
-        if (Cache::has('patients')) {
-            \Log::info('Cache');
-            return Cache::get('patients');
-        } else {
-            \Log::info('DB');
-            $patients = Patients::with('address')->get();
-            Cache::put('patients', $patients);
-            return $patients;
-        }
+        return Patients::with('address')->get();
     }
 
     public static function createPatient(array $data): Patients
