@@ -8,7 +8,7 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
 import { Quasar } from 'quasar';
-import VueTheMask from 'vue-the-mask'
+import VueTheMask from 'vue-the-mask';
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
 createInertiaApp({
@@ -38,7 +38,7 @@ createInertiaApp({
                         textColor: 'white',
                         actions: [{ icon: 'close', color: 'white' }],
                     },
-                },
+                }
             })
             .mount(el);
     },

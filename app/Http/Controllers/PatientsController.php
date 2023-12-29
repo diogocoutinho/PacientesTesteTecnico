@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\JobCompleted;
 use App\Http\Requests\PatientsRequest;
 use App\Http\Requests\PatientsUpdateRequest;
 use App\Http\Resources\PatientsResource;
 use App\Http\Services\PatientsService;
 use App\Jobs\ImportPatientsJob;
 use App\Models\Patients;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Inertia\Inertia;
@@ -17,6 +19,8 @@ class PatientsController extends Controller
     public function index()
     {
         $patients = PatientsService::getPatients();
+        $now = Carbon::now();
+        JobCompleted::dispatch('teste');
         return Inertia::render('Patients/Index', [
             'patients' => $patients
         ]);

@@ -23,11 +23,6 @@ const switchToTeam = (team) => {
     });
 };
 
-window.Echo.channel('job-completed')
-    .listen('JobCompleted', (e) => {
-        console.log(e.message)
-    });
-
 const logout = () => {
     router.post(route('logout'));
 };

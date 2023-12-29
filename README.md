@@ -66,7 +66,7 @@ docker-compose exec app php artisan migrate
 9. Rode node para compilar os assets e acesse a aplicação em http://localhost
 
 ```bash
-docker-compose exec app npm install && npm run dev
+docker compose exec app yarn && yarn dev
 ```
 
 ## Testes

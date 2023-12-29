@@ -44,6 +44,7 @@ RUN mkdir -p /var/log/horizon
 
 # Instala as dependências do Node.js (opcional, se estiver usando recursos de frontend)
 RUN apt-get install -y nodejs npm
+RUN npm install -g laravel-echo-server
 
 # Copia os arquivos de configuração do Supervisor para o diretório correto
 COPY supervisor/redis.conf /etc/redis/redis.conf

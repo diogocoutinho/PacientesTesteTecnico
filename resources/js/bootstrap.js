@@ -16,11 +16,13 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
  */
 
 import Echo from 'laravel-echo';
-import io from 'socket.io-client';
+// import io from 'socket.io-client';
 
 window.io = io;
 
 window.Echo = new Echo({
     broadcaster: 'socket.io',
-    host: 'http://172.20.0.4:6001'
+    host: 'http://172.21.0.6:6001',
 });
+
+

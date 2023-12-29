@@ -90,9 +90,20 @@ services:
     laravel-echo-server:
         build:
             context: ./docker
-            dockerfile: Dockerfile.echo
+            dockerfile: Docker.dockerfile
         ports:
             - '6001:6001'
+        volumes:
+            - .:/var/www/html
+        networks:
+            - laravel
+    echo:
+        image: node:14
+        restart: always
+        working_dir: /var/www/html
+        volumes:
+            - ./:/var/www/html
+        command: bash -c "pwd && npm install -g laravel-echo-server && laravel-echo-server start"
         networks:
             - laravel
 
@@ -105,3 +116,4 @@ volumes:
     redis-data:
     esdata:
     supervisor:
+    laravel-echo-server:

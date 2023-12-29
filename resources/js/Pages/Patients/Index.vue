@@ -1,6 +1,6 @@
 <script setup>
 import AppLayout from "@/Layouts/AppLayout.vue";
-import {onMounted, ref, reactive, watchEffect, nextTick} from 'vue';
+import {onMounted, ref, reactive, watchEffect, nextTick, onUnmounted, onBeforeUnmount} from 'vue';
 import {searchAddress} from "@/Helper/Api.js";
 import DialogModal from "@/Components/DialogModal.vue";
 import FormSection from "@/Components/FormSection.vue";
@@ -27,7 +27,7 @@ const props = defineProps({
 const fileInput = ref(null);
 const hasCsv = ref(false);
 const fileName = ref(null);
-const message = ref('');
+const message = ref(null);
 const statusActionMessage = ref(false);
 const loading = ref(false);
 const showModal = ref(false);
@@ -300,9 +300,36 @@ const importPatients = async () => {
     }
 };
 
+const socketTest = () => {
+    window.Echo.channel('pacientes_database_jobcompleted')
+        .listen('JobCompleted', (e) => {
+            console.log(e);
+            message.value = e.message
+            statusActionMessage.value = true
+        });
+};
+
 onMounted(() => {
-    // getPatients();
-});
+    console.log('mounted')
+
+    window.Echo.connector.socket.on('connect', () => {
+        console.log('Connected to the WebSocket server.');
+        socketTest();
+    });
+    console.log(window.Echo.socketId());
+
+})
+
+onUnmounted(() => {
+    console.log('unmounted')
+    window.Echo.leaveChannel('pacientes_database_jobcompleted')
+})
+
+onBeforeUnmount(() => {
+    console.log('before unmount')
+    window.Echo.channel('pacientes_database_jobcompleted')
+        .stopListening('JobCompleted')
+})
 
 </script>
 
@@ -320,19 +347,25 @@ onMounted(() => {
                         class="q-ma-md"
                     />
                     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                        Pacientes
+                        Pacientes {{message + ' + ' + statusActionMessage}}
                     </h2>
                 </div>
                 <div class="flex flex-row items-center">
                 </div>
             </div>
         </template>
-        <ActionMessage v-if="statusActionMessage" :status="statusActionMessage" @close="statusActionMessage = false">
+        <ActionMessage
+            :on="statusActionMessage"
+            @close="statusActionMessage = false"
+            :duration="1000"
+            class="fixed top-0 right-0 m-4 p-4 bg-blue-500 border border-blue-700 shadow-lg"
+        >
             {{ message }}
         </ActionMessage>
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+
                     <q-table
                         :rows="props.patients"
                         :columns="columns"

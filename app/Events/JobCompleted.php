@@ -20,6 +20,6 @@ class JobCompleted implements ShouldBroadcast
 
     public function broadcastOn()
     {
-        return 'job-completed';
+        return ['jobcompleted'];
     }
 }
